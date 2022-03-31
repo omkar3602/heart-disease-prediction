@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Heart Disease Predictor</title>
+</head>
+
+<body style="overflow-x:hidden">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/static/images/heart.png" alt="" width="24" height="24"
+                    class="d-inline-block align-text-center">
+                Heart Disease Predictor
+            </a>
+        </div>
+    </nav>
+
+    <div class="h-100 row align-items-center d-flex justify-content-center">
+        <div class="card mt-5 mb-5 p-2" style="width: 18rem;">
+            <img src="static/images/heart.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Heart Disease Risk:</h5>
+
+                {% if prediction == 1 %}
+                <h1 class="card-text text-center text-danger">High</h1>
+                {% else %}
+                <h1 class="card-text text-center text-success">Low</h1>
+                {% endif %}
+
+                <a href="/" class="btn btn-primary mt-3">Home</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
