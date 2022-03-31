@@ -50,7 +50,7 @@ addCategories("age", ['18-24',
     '75-79',
     '80 or older']);
 
-addCategories("race", ['American Indian/\nAlaskan Native',
+addCategories("race", ['American Indian/Alaskan Native',
     'Asian',
     'Black',
     'Hispanic',
