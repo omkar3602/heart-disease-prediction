@@ -9,11 +9,9 @@ def home():
 @app.route("/result", methods=["POST"])
 def result():
     form_dict = request.form.to_dict()
-    print(form_dict)
 
-    # from utils.predict import predict
-    # prediction = predict(form_dict)
-    prediction = 0
+    from utils.predict import predict
+    prediction = predict(form_dict)
 
     return render_template("result.html", prediction=prediction)
 
